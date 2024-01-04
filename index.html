@@ -110,6 +110,35 @@
       padding: 10px 10px;
       border-radius: 25px;
     }
+
+    .navbar-nav li a {
+  position: relative;
+  text-decoration: none;
+  color: #000; 
+}
+
+.navbar-nav li a:hover {
+  color: #00f; 
+}
+
+.navbar-nav li a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px; 
+  bottom: 0;
+  left: 0;
+  background-color: #00f; 
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav li a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
+}
+
   </style>
 </head>
 <body>
@@ -160,7 +189,7 @@
     <div class="img-container1">
     <!-- <img src="https://source.unsplash.com/1000x450/?teamwork" alt="Image 1"> -->
     <div class="video2">
-    <img src="https://source.unsplash.com/1510x700/?technology" alt="Image 2">
+    <img src="https://source.unsplash.com/1515x700/?technology" alt="Image 2">
     <div class="text-box1">
       <h1>We Enable Digital Transformation</h1>
       <p>At ARKONET, we're dedicated to helping businesses achieve successful digital transformation. We offer strategic guidance, advanced technology, customized solutions, data-driven insights, partnerships, continuous improvement, education, and unwavering support to drive change within the ARKONET ecosystem.</p>
@@ -171,7 +200,7 @@
 
   <div class="img-container2">
   <div class="video3">
-    <img src="https://source.unsplash.com/1510x700/?finance" alt="Image 3">
+    <img src="https://source.unsplash.com/1515x700/?finance" alt="Image 3">
     <div class="text-box2">
       <h1>We Lead Automation Advancement</h1>
       <p>ARKONET leads the way in industry-specific automation solutions powered by AI, allowing organizations to streamline operations, increase efficiency, and attain higher productivity, profitability, and sustainable growth through their automation efforts.</p>
@@ -182,7 +211,7 @@
 
   <div class="img-container3">
   <div class="video4">
-    <img src="https://source.unsplash.com/1510x700/?feedback" alt="Image 4">
+    <img src="https://source.unsplash.com/1515x700/?feedback" alt="Image 4">
     <div class="text-box3">
       <h1>Your Input Matters</h1>
       <p>At ARKONET, we value the cultivation of a digital mindset for organizational success in today's digital age. Our approach involves embracing change, advocating for digital proficiency, nurturing innovation, and fostering collaboration. This empowers individuals and organizations to readily embrace digital transformation, driving exceptional success.</p>
